@@ -1,1 +1,3250 @@
 /// main
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+
+    *{
+padding: 0;
+margin: 0;
+}
+
+#a1{
+height: 45px;
+width: 99.8%;
+background-color: black;
+padding: 1px;
+display: flex;
+justify-content: space-between;
+position: fixed;
+z-index: 111;
+
+}
+
+#a1:hover #end1{
+color: gray;
+}
+
+#a2{
+height: 30px;
+width: max-content;
+/* background-color: aqua; */
+margin-top: 8px;
+margin-left: 15px;
+display: flex;
+/* justify-content: center; */
+}
+
+#a3{
+font-size: 30px;
+color: rgb(136,136,136);
+}
+
+
+#a4{
+height: 35px;
+width: 200px;
+/* background-color: brown; */
+margin-left: 15px;
+margin-top: -10px;
+}
+
+#a5{
+/* height: 100%; */
+width: 100%;
+
+}
+
+#a6{
+height: 30px;
+width: 590px;
+/* background-color: blue; */
+/* margin-top: 8px; */
+margin-left: 38px;
+}
+
+#end1{
+height: 35px;
+/* background-color: blueviolet; */
+width: 140px;
+margin-top: 5px;
+display: flex;
+color: white;
+justify-content: space-around;
+
+}
+
+
+
+
+#a7{
+
+font-size:22px;
+/* color: white; */
+margin-top: 5px;
+cursor: pointer;
+}
+#a7:hover{
+color: white;
+}
+#a8{
+
+font-size:18px;
+/* color: white; */
+margin-top: 10px;
+cursor: pointer;
+}
+
+#a8:hover{
+color: white;
+}
+#a9{
+text-decoration: none;
+display: flex;
+justify-content: space-around;
+list-style: none;
+}
+
+
+#a1:hover #a10{
+color: gray;
+}
+#a10{
+    color: white;
+    /* text-decoration: none; */
+font-size: 13px;
+margin-top: 0px;
+font-family: sans-serif;
+/* background-color: brown; */
+padding: 11px;
+cursor: pointer;
+z-index: 111;
+}
+#a10:hover{
+    color: white !important;
+}
+#a11{
+font-size: 8px;
+margin-top: -40px;
+}
+
+#a12{
+height: 300px;
+width: 210px;
+background-color: white;
+position: absolute;
+/* margin-top: -300px; */
+margin-left: -11px;
+box-shadow: -0px 0px 5px 1px rgba(0, 0, 0, 0.175);
+/* overflow: hidden; */
+transition: .50s;
+opacity: 0;
+visibility: hidden;
+}
+
+
+
+#a13{
+height: 35px;
+width: 99.7%;
+border-bottom: 1px solid silver;
+padding: 1px;
+display: flex;
+justify-content: space-around;
+cursor: pointer;
+z-index: 11;
+}
+#a13:hover{
+background-color: rgb(227, 225, 225);
+}
+
+#a14{
+color: rgb(81, 81, 81);
+/* margin-left: 20px; */
+font-size: 14px;
+margin-top: 12px;
+/* position: relative; */
+}
+
+#a15{
+margin-top: 13px;
+font-size: 10px;
+color: black;
+}
+
+#a16{
+color: rgb(81, 81, 81);
+margin-left: -60px;
+font-size: 14px;
+margin-top: 12px;
+}
+
+#a17{
+color: white;
+/* text-decoration: none; */
+font-size: 13px;
+margin-top: 1px;
+font-family: sans-serif;
+/* background-color: brown; */
+padding: 9px;
+cursor: pointer;
+position: relative;
+z-index: 11;
+}
+#a17:hover{
+color: white !important;
+}
+
+#a17:hover #a12{
+    margin-top: 14px;
+    opacity: 1;
+    visibility: visible;
+}
+
+#a1:hover #a17{
+color: gray;
+}
+
+#a18{
+height: 35px;
+width: 99.7%;
+border-bottom: 1px solid silver;
+padding: 1px;
+display: flex;
+justify-content: space-around;
+cursor: pointer;
+}
+#a18:hover{
+background-color: rgb(227, 225, 225);
+}
+
+#a19{
+height: max-content;
+width: 200px;
+background-color: white;
+position: absolute;
+z-index: 1111;
+margin-left: 405px;
+box-shadow: -0px 0px 5px 1px rgba(0, 0, 0, 0.175);
+visibility: hidden;
+
+}
+
+#a13:hover #a19{
+visibility: visible !important;
+}
+
+#a20{
+height: 36px;
+width: 100%;
+border-bottom: 1px solid silver;
+padding: 1px;
+}
+
+#a20:hover{
+background-color: rgb(215, 215, 215);
+}
+#a21{
+color: rgb(29, 29, 29);
+margin-top: 10px;
+margin-left: 20px;
+}
+
+
+#a22{
+height: 36px;
+width: 100%;
+/* border-bottom: 1px solid silver; */
+padding: 1px;
+}
+#a22:hover{
+background-color: rgb(215, 215, 215);
+}
+
+#a23{
+height: 200px;
+width: 100%;
+background-color: white;
+position:  absolute;
+margin-left: -52%;
+margin-top: 10px;
+display: flex;
+box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.21);
+justify-content: space-around;
+opacity: 0;
+transition: 1;
+display: none;
+}
+
+#a10:hover #a23{
+opacity: 1;
+display:flex;
+}
+
+#a24{
+height: 190px;
+width: 18%;
+/* background-color: blueviolet; */
+
+}
+#a25{
+width: 100%;
+height:140px;
+/* background-color: aqua; */
+position: relative;
+}
+#a26{
+width: 100%;
+margin-top: 5px;
+}
+
+#a27{
+height: 125px;
+width: 100%;
+background-color: rgba(0, 0, 0, 0.153);
+position: absolute;
+margin-top: 4px;
+}
+
+#a24:hover #a27{
+opacity: 0;
+}
+
+#a28{
+color: black;
+margin-top: 17px;
+}
+
+#a24:hover #a28{
+color: silver;
+}
+
+
+#more1{
+height: max-content;
+width: 200px;
+background-color: white;
+position: absolute;
+margin-top: 0px;
+margin-left: -10px;
+box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.126);
+opacity: 0;
+transition: .50s;
+visibility: hidden;
+}
+#a10:hover #more1{
+opacity: 1;
+margin-top: 10px;
+visibility: visible;
+}
+
+#a29{
+height: 35px;
+width: 99.7%;
+border-bottom: 1px solid silver;
+padding: 1px;
+display: flex;
+
+cursor: pointer;
+z-index: 11;
+}
+#a29:hover{
+background-color: rgb(227, 225, 225);
+}
+
+#a30{
+color: rgb(81, 81, 81);
+margin-left: 25px;
+font-size: 14px;
+margin-top: 12px;
+/* position: relative; */
+
+}
+
+#a31{
+height: 35px;
+width: 99.7%;
+/* border-bottom: 1px solid silver; */
+padding: 1px;
+display: flex;
+
+cursor: pointer;
+z-index: 11;
+}
+#a31:hover{
+background-color: rgb(227, 225, 225);
+}
+
+#main1x{
+height: max-content;
+width: 99.8%;
+background-color: rgb(238,238,238);
+position: relative;
+/* margin-top: 10%; */
+padding: 1px;
+}
+
+
+@media screen and (max-width:1000px) {
+#a6{
+display: none;
+}
+}
+
+
+
+#a32{
+height: max-content;
+width: 99.8%;
+/* background-color: aqua; */
+margin-top: 46px;
+display: flex;
+justify-content: space-around;
+display: none;
+}
+
+#a33{
+height: 80%;
+width:  50%;
+
+background-color: white;
+display: flex;
+justify-content: center;
+box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.126);
+}
+
+#a35{
+color: rgb(37, 37, 37);
+margin: 8px;
+font-size: 14px;
+font-family: sans-serif;
+}
+
+#a36{
+height: 80%;
+width:  50%;
+
+background-color: rgb(214, 214, 214);
+display: flex;
+justify-content: center;
+box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.126);
+}
+
+#a37{
+color: rgb(132, 132, 132);
+margin: 8px;
+font-size: 14px;
+font-family: sans-serif;
+}
+
+
+
+#a38{
+height: 80%;
+width:  33.2%;
+
+background-color: rgb(214, 214, 214);
+display: flex;
+justify-content: center;
+box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.126);
+display: none;
+}
+
+#a39{
+color: rgb(132, 132, 132);
+margin: 8px;
+font-size: 14px;
+font-family: sans-serif;
+/* display: none; */
+}
+
+#nd1{
+height: max-content;
+width: 100%;
+background-color: rgb(238,238,238);
+display: flex;
+justify-content: center;
+}
+#a40{
+height:max-content;
+width: 95.6%;
+background-color: rgb(238,238,238);
+margin-top: 60px;
+}
+#a41{
+height: 60px;
+width: 100%;
+background-color: rgb(221,221,221);
+display: flex;
+justify-content: center;
+}
+#a42{
+font-family: sans-serif;
+font-size: 19px;
+font-weight: 1000;
+color: rgb(187,187,187);
+margin-top: 20px;
+
+}
+
+#a43{
+height: max-content;
+width: 100%;
+margin-top: 14px;
+background-color: rgb(238,238,238);
+display: flex;
+justify-content: space-evenly;
+}
+
+#a44{
+height: 460px;
+background-color: rgba(219, 230, 0, 0.527);
+min-width:24.7%;
+background-image: url(./pics/woman-beach2.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+display: flex;
+justify-content: flex-end;
+}
+#a45{
+min-width: 450px;
+}
+
+#a46{
+height: 100%;
+width: 100%;
+background-color: rgba(0, 0, 0, 0.247);
+opacity: 1;
+cursor: pointer;
+position: absolute;
+}
+
+#a46:hover{
+opacity: 0;
+}
+
+#a47{
+height: max-content;
+width: 125px;
+/* background-color: aqua; */
+margin-top: 10px;
+position: absolute;
+display: flex;
+justify-content: space-around;
+}
+
+#a48{
+height: max-content;
+width: 45%;
+/* background-color: aquamarine; */
+display: flex;
+justify-content: space-around;
+}
+#a51{
+height: max-content;
+width: 30%;
+/* background-color: aquamarine; */
+display: flex;
+justify-content: space-around;
+}
+#a49{
+font-size: 13px;
+color: white;
+}
+
+
+#a50{
+font-family: sans-serif;
+color: white;
+font-size: 12px;
+}
+#a52{
+height: 148px;
+width: 80%;
+/* background-color: bisque; */
+position: absolute;
+margin-top: 289px;
+left: 18px;
+}
+
+#a53{
+height: 23px;
+width: 100px;
+background-color: rgb(235,2,84);
+margin-top: 10px;
+border: none;
+color: white;
+font-size: 11px;
+cursor: pointer;
+}
+
+
+#a54{
+font-size: 22px ;
+font-family: sans-serif;
+font-weight: bold;
+color: white;
+margin-top: 20px;
+text-shadow: 2px 2px rgba(0, 0, 0, 0.795);
+cursor: pointer;
+}
+
+#a55{
+height: 460px;
+background-color: rgba(219, 230, 0, 0.527);
+min-width:24.7%;
+background-image: url(./pics/10006.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+display: flex;
+justify-content: flex-end;
+}
+
+#a56{
+height: 460px;
+background-color: rgba(219, 230, 0, 0.527);
+min-width:24.7%;
+background-image: url(./pics/10007.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+display: flex;
+justify-content: flex-end;
+}
+#a57{
+height: 460px;
+background-color: rgba(219, 230, 0, 0.527);
+min-width:24.7%;
+background-image: url(./pics/10018.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+display: flex;
+justify-content: flex-end;
+}
+
+
+#a58{
+height: max-content;
+width: 100%;
+background-color: rgb(238,238,238);
+margin-top: 10px;
+display: flex;
+justify-content: space-between;
+
+}
+
+#a59{
+height: 2460px;
+width: 22.3%;
+/* border: 1px solid black; */
+position: sticky;
+top: 49px;
+}
+#a60{
+height: max-content;
+width: 54%;
+/* border: 1px solid black; */
+}
+#a61{
+height: max-content;
+width: 22%;
+/* border: 1px solid black; */
+position: sticky;
+top: 49px;
+
+}
+
+#a62{
+font-size: 14px;
+color: black;
+font-family: sans-serif;
+font-weight: bold;
+margin-top: 10px;
+}
+
+#a63{
+height: 110px;
+margin-top: 8px;
+width: 98.5%;
+background-color: white;
+border-bottom:1px solid rgb(134, 134, 134) ;
+display: flex;
+padding: 1px;
+justify-content: space-evenly;
+}
+
+#a64{
+height: 75px;
+width: 80px;
+margin-top: 10px;
+background-color: blue;
+/* margin-left: 10px; */
+cursor: pointer;
+position: relative;
+}
+
+#a65{
+width: 100%;
+position: absolute;
+}
+#a66{
+height: 105%;
+width: 100%;
+background-color: rgba(0, 0, 0, 0.203);
+position: absolute;
+opacity: 1;
+}
+
+#a63:hover #a66{
+opacity: 0;
+}
+
+#a67{
+font-size: 13px;
+font-family: sans-serif;
+width: 50%;
+/* border: 1px solid; */
+cursor: pointer;
+}
+
+#a68{
+color: rgb(103, 103, 103);
+font-size: 12px;
+margin-top: 10px;
+
+}
+
+#a69{
+font-size: 12.5px;
+margin-top: 9px;
+}
+
+#a63:hover #a69{
+color: silver;
+}
+
+#a70{
+height: 110px;
+/* margin-top: 8px; */
+width: 98.5%;
+background-color: white;
+border-bottom:1px solid rgb(134, 134, 134) ;
+display: flex;
+padding: 1px;
+justify-content: space-evenly;
+}
+
+#a70:hover #a69{
+color: silver;
+}
+
+#a70:hover #a66{
+opacity: 0;
+}
+
+
+
+#a71{
+width: 100%;
+position: absolute;
+height: 100%;
+}
+
+#a71{
+height: 105%;
+width: 100%;
+background-color: rgba(0, 0, 0, 0.203);
+position: absolute;
+opacity: 1;
+}
+
+
+#a73{
+height: 25px;
+width: 100%;
+background-color: white;
+border: 1px solid rgb(235,9,84);
+border-radius: 5px;
+margin-top: 20px;
+color:rgb(235,9,84) ;
+font-weight: bold;
+font-size: 12px;
+cursor: pointer;
+transition: .50s;
+}
+#a73:hover{
+color: white;
+background-color:rgb(235,9,84) ;
+}
+
+#a74{
+font-size: 14px;
+color: black;
+font-family: sans-serif;
+font-weight: bold;
+margin-top: 10px;
+}
+
+#a75{
+height: max-content;
+width: 100%;
+background-color: white;
+display: flex;
+justify-content: center;
+margin-top: 10px;
+}
+
+#a76{
+height: max-content;
+width: 92%;
+/* border: 1px solid black; */
+margin-top: 20px;
+}
+
+#a77{
+height: max-content;
+width: 99.8%;
+/* background-color: aqua; */
+border-bottom:1px solid rgb(181, 181, 181) ;
+display: flex;
+justify-content: space-between;
+}
+
+#a78{
+height: max-content;
+width: 30%;
+/* border: 1px solid black; */
+}
+
+
+#a79{
+height: max-content;
+width: 100%;
+/* background-color: green; */
+position: relative;
+}
+
+#a80{
+width: 100%;
+/* position: absolute; */
+}
+
+
+#a81{
+font-size: 11.8px;
+font-family: sans-serif;
+color: rgb(143, 143, 143);
+margin-top: 15px;
+/* margin-left: 10px; */
+cursor: pointer;
+}
+
+#a82{
+font-size: 12px;
+font-family: sans-serif;
+color: rgb(56, 56, 56);
+margin-top: 10px;
+/* margin-left: 10px; */
+cursor: pointer;
+}
+
+#shedo1{
+height: 96%;
+width: 100%;
+background-color: rgba(0, 0, 0, 0.236);
+position: absolute;
+top: 0;
+/* z-index: 1111; */
+opacity: 1;
+cursor: pointer;
+}
+
+
+#a78:hover #shedo1{
+opacity: 0;
+}
+#a78:hover #a82{
+color: rgb(126, 126, 126);
+}
+
+
+#a83{
+font-family: sans-serif;
+font-size: 16px;
+font-weight: bold;
+margin-top: 20px;
+}
+
+
+#a84{
+height: 150px;
+width: 100%;
+margin-top: 18px;
+border-bottom: 1px solid silver;
+display:flex;
+/* justify-content: space-around; */
+cursor: pointer;
+
+}
+
+
+#a85{
+height: max-content;
+width: 250px;
+/* background-color: aqua; */
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+}
+
+#a86{
+    width: 100%;
+    /* height: 100%; */
+    position: relative;
+
+}
+
+
+
+
+
+#a87{
+    position: absolute;
+    font-size: 35px;
+    color: white;
+   opacity: 0.9;
+
+}
+
+
+#a84:hover #a87{
+opacity: 1;
+}
+
+#a88{
+height: 100%;
+width: 100%;
+background-color: rgba(0, 0, 0, 0.126);
+position: absolute;
+
+}
+#a84:hover #a88{
+opacity: 0;
+}
+
+#a89{
+font-size: 11px;
+color: silver;
+font-family: sans-serif;
+}
+
+#a90{
+color: black;
+font-size: 14px;
+font-family: sans-serif;
+margin-top: 10px;
+cursor: pointer;
+}
+#a84:hover #a90{
+color: silver;
+}
+
+
+
+#a91{
+color: rgb(99, 99, 99);
+font-family: sans-serif;
+margin-top: 8px;
+font-size: 12px;
+}
+
+
+#a92{
+height: max-content;
+width: 100%;
+margin-top: 18px;
+border-bottom: 1px solid silver;
+
+cursor: pointer;
+
+}
+
+#a92:hover #a90{
+color: silver;
+}
+
+#a92:hover #a88{
+opacity: 0;
+}
+#a92:hover #a87{
+opacity: 1;
+}
+
+
+#a93{
+height: max-content;
+width: 100%;
+/* background-color: aqua; */
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+}
+
+
+
+
+#a94{
+font-family: sans-serif;
+font-size: 14px;
+font-weight: bold;
+margin-top: 20px;
+margin-left: 5px;
+}
+
+
+#a95{
+height:max-content;
+width: 100%;
+/* background-color: blue; */
+/* border: 1px solid black; */
+margin-top: 20px;
+overflow: hidden;
+position: relative;
+}
+
+#a96{
+width: 800%;
+/* background-color: aqua; */
+cursor: pointer;
+height: max-content;
+display: flex;
+
+position: relative;
+animation: ada1 10s infinite linear;
+}
+
+
+
+
+@keyframes ada1 {
+0%{
+margin-left: 0%;
+}
+10%{
+margin-left: 0%;
+}
+15%{
+margin-left: -100%;
+}
+25%{
+margin-left: -100%;
+}
+30%{
+margin-left: -200%;
+}
+40%{
+margin-left: -200%;
+}
+50%{
+margin-left: -300%;
+}
+60%{
+margin-left: -300%;
+}
+70%{
+margin-left: -400%;
+}
+80%{
+margin-left: -400%;
+}
+90%{
+margin-left: -500%;
+}
+100%{
+margin-left: -500%;
+}
+}
+
+#a98{
+width: 100%;
+}
+
+
+#a99{
+height: max-content;
+width: 100%;
+background-color: rgba(0, 0, 0, 0.511);
+position: absolute;
+margin-top: -39px;
+bottom: 0;
+/* z-index: 1111; */
+
+}
+
+#a97{
+height: max-content;
+width: 12.5%;
+/* background-color: orange; */
+position: relative;
+/* margin-left: 2px; */
+}
+
+
+#b1{
+color: white;
+font-size: 14px;
+font-weight: bold;
+font-family: sans-serif;
+text-align: center;
+margin-top:13px;
+
+}
+
+#b2{
+/* height: 400px; */
+width: 100%;
+/* background-color: rebeccapurple; */
+/* position: absolute; */
+display: flex;
+margin-top: 25px;
+}
+
+#b3{
+height: 100%;
+width: 200px;
+margin-left: 1%;
+/* background-color: aquamarine; */
+
+}
+
+#b4{
+width: 100%;
+}
+
+#b5{
+height: max-content;
+/* background-color: bisque; */
+width: 100%;
+position: relative;
+}
+
+
+
+#b6{
+height: 200px;
+width: 90%;
+/* background-color: orange; */
+}
+
+
+#b7{
+width: 100%;
+/* height: 1px ; */
+border: 1px solid rgb(229,229,229);
+
+margin-top: 20px;
+}
+
+
+
+#b8{
+height: 27px;
+
+width: 99.8%;
+border: 1px solid  rgb(237,34,105);
+border-radius: 5px;
+margin-top: 14px;
+background-color: white;
+font-size: 11px;
+font-weight: bold;
+color: rgb(237,34,105);
+transition: .50s;
+cursor: pointer;
+letter-spacing: .5px;
+}
+
+#b8:hover{
+background-color: rgb(237,34,105);
+color: white;
+}
+
+
+
+
+
+
+#b9{
+height: 110px;
+width: 100%;
+margin-top: 18px;
+/* border-bottom: 1px solid silver; */
+display:flex;
+/* justify-content: space-around; */
+cursor: pointer;
+
+}
+#b9:hover #a87{
+opacity: 1;
+}
+
+
+#b9:hover #a88{
+opacity: 0;
+}
+
+#b9:hover #a90{
+color: silver;
+}
+
+
+#b10{
+/* height: 1px; */
+width: 100%;
+border: 1px solid rgba(192, 192, 192, 0.533);
+margin-top: 15px;
+}
+
+#b11{
+height: 155px;
+margin-top: 10px;
+width: 100%;
+background-color: white;
+cursor: pointer;
+}
+
+#b12{
+height: 95px;
+width: 100%;
+background-color: aqua;
+overflow: hidden;
+position: relative;
+}
+
+#b13{
+width: 100%;
+position: absolute;
+}
+
+#b14{
+height: 100%;
+width: 100%;
+background-color: rgba(0, 0, 0, 0.142);
+position: absolute;
+opacity: 1;
+}
+#b11:hover #b14{
+opacity: 0;
+}
+
+
+#b15{
+height: 45px;
+width: 90%;
+/* border:1px solid black; */
+margin-top: 10px;
+margin-left: 4%;
+}
+
+#b16{
+font-size: 10px;
+font-family: sans-serif;
+color: rgb(105, 105, 105);
+margin-left: 2px;
+}
+#b17{
+font-size: 12px;
+font-family: sans-serif;
+color: black;
+margin-left: 2px;
+margin-top: 6px;
+}
+
+#b11:hover #b17{
+color:rgb(150, 150, 150);
+}
+#b18{
+/* height: 200px; */
+width: 100%;
+/* background-color: aquamarine; */
+margin-top: 15px;
+}
+
+#b19{
+width: 100%;
+}
+
+
+#b21{
+height: 65px;
+width: 100%;
+margin-top: 10px;
+background-color: rgb(221,221,221);
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+#b22{
+font-family: sans-serif;
+font-weight: bold;
+/* text-align: center; */
+color: rgb(187,187,187);
+}
+
+
+#b23{
+height: 227px;
+width: 100%;
+background-color: rgb(68,68,68);
+margin-top: 30px;
+margin-left: -2px;
+padding: 1px;
+display: flex;
+justify-content: space-around;
+}
+#b24{
+height: 25px;
+width: 100%;
+background-color: rgb(51,51,51);
+margin-left: -2px;
+padding: 1px;
+display: flex;
+justify-content: center;
+}
+
+
+#b25{
+height: 180px;
+width: 30%;
+/* background-color: orange; */
+margin-top: 20px;
+
+}
+
+#b26{
+width:135px;
+/* border: 1px solid black; */
+margin-top: 20px;
+margin-left: 2%;
+}
+
+#b27{
+width: 100%;
+}
+
+#b28{
+    font-size: 11.5px;
+    font-family: sans-serif;
+    color: rgb(115,118,118);
+
+}
+
+
+#b29{
+height: max-content;
+width: 95%;
+/* border: 1px solid black; */
+margin-left: 2%;
+margin-top: 10px;
+}
+
+#b30{
+font-weight: bold;
+cursor: pointer;
+transition: .50s;
+}
+#b30:hover{
+color: rgb(246, 246, 246);
+}
+
+#b31{
+height: 30px;
+width: 90%;
+margin-top: 25px;
+/* border: 1px solid black; */
+ margin-left: 2%;
+ display: flex;
+}
+
+
+#b32{
+color: rgb(119,119,119);
+font-size: 18px;
+cursor: pointer;
+transition: .50s;
+}
+
+#b32:hover{
+color: white;
+}
+
+#b33{
+color: rgb(119,119,119);
+font-size: 18px;
+margin-left: 10px;
+cursor: pointer;
+transition: .50s;
+}
+
+#b33:hover{
+color: white;
+}
+
+#b34{
+font-family: sans-serif;
+font-size: 14.5px;
+font-weight: bold;
+color: white;
+margin-top: 15px;
+}
+
+#b35{
+height: 25px;
+width: 95%;
+border-bottom: 1px solid rgb(119,119,119);
+margin-top: 10px;
+display: flex;
+align-items: center;
+
+}
+
+
+#b36{
+font-size: 11px;
+cursor: pointer;
+font-family: sans-serif;
+color: rgb(119,119,119);
+transition: .50s;
+}
+
+#b36:hover{
+color: white;
+}
+
+
+#b37{
+height: 25px;
+width: 95%;
+/* border-bottom: 1px solid rgb(119,119,119); */
+margin-top: 10px;
+display: flex;
+align-items: center;
+}
+
+#b38{
+height: max-content;
+width: 90%;
+/* background-color: aqua; */
+margin-top: 7px;
+}
+#b39{
+height: 20px;
+width: 60px;
+background-color: rgb(85,85,85);
+border: none;
+font-size: 9.5px;
+color: rgb(171, 171, 171);
+font-weight: 700;
+cursor: pointer;
+}
+
+#b39:hover{
+background-color: rgb(121, 121, 121);
+color: white;
+}
+
+
+#c1{
+    height: max-content;
+    width: 95.3%;
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: space-between;
+}
+
+#c2{
+height: 21px;
+width: 350px;
+/* background-color: brown; */
+display: flex;
+margin-top: 2px;
+color: rgb(119,119,119);
+align-items: center;
+}
+
+
+#c3{
+font-size: 9px;
+font-family: sans-serif;
+
+}
+
+
+#c4{
+height: 21px;
+width: 170px;
+/* background-color: brown; */
+display: flex;
+margin-top: 2px;
+color: rgb(119,119,119);
+align-items: center;
+display: flex;
+justify-content: space-between;
+cursor: pointer;
+}
+
+
+
+#c5{
+font-size: 9.5px;
+font-family: sans-serif;
+transition: .50s;
+}
+
+#c5:hover{
+color: white;
+}
+#c6{
+font-size: 9.5px;
+font-family: sans-serif;
+/* margin-left: 20px; */
+
+transition: .50s;
+}
+#c6:hover{
+color: white;
+}
+#a2nd1{
+height: 120px;
+width: 96%;
+/* background-color: green; */
+margin-left: 3%;
+/* position: absolute; */
+/* margin-top: 10px; */
+}
+#a2nd2{
+height: 110px;
+width: 98%;
+/* background-color: green; */
+margin-left: 1%;
+/* position: absolute; */
+margin-top: 20px;
+}
+
+
+
+
+#textdiv1{
+height: 90px;
+width: 100%;
+/* border: 1px solid black; */
+}
+
+
+
+@media screen and (max-width:812px) {
+    #c1{
+    /* display: block !important; */
+flex-direction: column-reverse;    
+
+}
+
+#b24{
+height: max-content !important;
+}
+#b23{
+height: max-content !important;
+}
+
+}
+
+@media screen and(max-width:529px) {
+    #c1{
+
+    }
+}
+
+@media screen and (max-width:474px) {
+#a8{
+display: none;
+}
+
+#end1{
+width: max-content;
+
+}
+}
+
+
+
+@media screen and (max-width:1100px) {
+#a32{
+display: flex;
+}
+#a59{
+display: none;
+}
+#a60{
+width: 65.5%;
+}
+#a61{
+width: 32%;
+}
+#a76{
+height: max-content;
+
+
+}
+
+}
+
+
+@media screen and (max-width:990px) {
+
+
+#b23{
+    
+flex-wrap: wrap;
+/* width: 400px; */
+height: max-content;
+justify-content: flex-start;
+
+}
+
+#b25{
+width: 400px;
+margin-left: 20px;
+}
+}
+
+@media screen and (max-width:900px) {
+    
+    #a60{
+    height: max-content;
+    }
+    #a75{
+    height: max-content;
+    }
+
+    #a78{
+width: 100%;
+display: flex;
+margin-top: 10px;
+}
+#a77{
+display: block;
+}
+
+
+#textdiv1{
+margin-left: 20px;
+}
+
+
+#a91{
+display: none;
+}
+
+}
+
+
+@media screen and (max-width:845px) {
+#b25{
+width: 95%;
+}
+}
+
+
+@media screen and (max-width:760px) {
+#a33{
+width: 33.2%;
+}
+#a36{
+width: 33.2%;
+}
+#a38{
+display: flex;
+}
+
+#a43{
+display: block;
+}
+
+#a44{
+width: 100% !important;
+height: 220px;
+
+}
+
+#a52{
+margin-top: 100px;
+}
+#a55{
+width: 99.8% !important;
+height: 230px;
+margin-top: 10px;
+
+
+}
+
+
+#a56{
+    width: 99.8% !important;
+height: 230px;
+margin-top: 5px;
+}
+#a57{
+    width: 99.8% !important;
+height: 230px;
+margin-top: 5px;
+}
+#a90{
+font-size: 14px;
+}
+#a75{
+height: max-content;
+}
+
+}
+
+
+@media screen and (max-width:710px) {
+#a60{
+width: 100%;
+}
+
+
+
+
+    #a61{
+display: none;
+}
+}
+
+
+@media screen and (max-width:660) {
+#a99{
+margin-top: -100px !important;
+}
+}
+
+
+@media screen and (max-width:440px) {
+    #a79{
+height: 100px;
+}
+#c2{
+width: 90%;
+}
+#a80{
+height: 100%;
+}
+
+}
+@media screen and (max-width:450px) {
+#a42{
+font-size: 15px;
+}
+}
+@media screen and (max-width:345px) {
+#a42{
+font-size: 14px;
+}
+#b22{
+font-size: 15px;
+}
+}
+
+
+@media screen and (max-width:500px) {
+#b13{
+height: 100%;
+}
+}
+
+
+</style>
+
+
+
+</head>
+<body>
+    
+    <div id="main1x">
+
+
+
+<div id="a1">
+
+    
+<div id="a2">
+    <i id="a3" class="fa-solid fa-bars"></i>
+<div id="a4">
+<img id="a5" src="./pics/10005.png" alt="">
+</div>
+
+
+<div id="a6">
+
+<ul id="a9">
+<li id="a10" >HOME</li>
+<li id="a17" >FEATURES
+    <i id="a11" class="fa-solid fa-sort-down"></i>
+
+<div id="a12">
+
+    <div id="a13">
+                                    <p id="a14">Logo  Locations</p>
+                                <i id="a15" class="fa-solid fa-caret-right"></i>
+
+                                <div id="a19">
+                        <div id="a20">
+                        <p id="a21">
+                        Logo LeaderBorder
+                        </p>
+
+                        </div>
+                        <div id="a20">
+                        <p id="a21">
+                        Logo Nav
+                        </p>
+
+                        </div>
+                        <div id="a22">
+                        <p id="a21">
+                        Logo wide
+                        </p>
+
+                        </div>
+                        </div>
+    </div>
+
+    <div id="a13">
+              <p id="a14">Theme skin  1 </p>
+         <i id="a15" class="fa-solid fa-caret-right"></i>
+
+
+         <div id="a19">
+                        <div id="a20">
+                        <p id="a21">
+                        Entertainment skin
+                        </p>
+
+                        </div>
+                        <div id="a20">
+                        <p id="a21">
+                        Tech skin
+                        </p>
+
+                        </div>
+                        <div id="a20">
+                        <p id="a21">
+                        Fasion skin
+                        </p>
+
+                        </div>
+    
+                      <div id="a20">
+                        <p id="a21">
+                        Tech skin
+                        </p>
+</div>
+                        </div>
+    </div>
+
+<div id="a13">
+    <p id="a14">Feauter Layout</p>
+<i id="a15" class="fa-solid fa-caret-right"></i>
+
+<div id="a19">
+    <div id="a20">
+    <p id="a21">
+    Feauter post 1
+    </p>
+
+    </div>
+    <div id="a20">
+    <p id="a21">
+        Feauter post 2
+    </p>
+
+    </div>
+    <div id="a20">
+    <p id="a21">
+        Feauter post 3
+    </p>
+
+    </div>
+
+  <div id="a20">
+    <p id="a21">
+        Feauter post 4
+    </p>
+</div>
+  <div id="a20">
+    <p id="a21">
+        Feauter post 5
+    </p>
+</div>
+  <div id="a20">
+    <p id="a21">
+        Feauter post 6
+    </p>
+</div>
+  <div id="a20">
+    <p id="a21">
+        Feauter post 7
+    </p>
+</div>
+  <div id="a20">
+    <p id="a21">
+        Feauter post 8
+    </p>
+</div>
+  <div id="a20">
+    <p id="a21">
+        Feauter post 9
+    </p>
+</div>
+    </div>
+
+</div>
+
+
+<div id="a13">
+    <p id="a14">Post Templete</p>
+<i id="a15" class="fa-solid fa-caret-right"></i>
+<div id="a19">
+    <div id="a20">
+    <p id="a21">
+    post Templete 1
+    </p>
+
+    </div>
+    <div id="a20">
+    <p id="a21">
+        post Templete 2
+    </p>
+
+    </div>
+    <div id="a20">
+    <p id="a21">
+        post Templete 3
+    </p>
+
+    </div>
+
+  <div id="a20">
+    <p id="a21">
+        post Templete 4
+    </p>
+</div>
+  <div id="a20">
+    <p id="a21">
+        post Templete 5
+    </p>
+</div>
+  <div id="a20">
+    <p id="a21">
+        post Templete 6
+    </p>
+</div>
+  <div id="a20">
+    <p id="a21">
+        post Templete 7
+    </p>
+</div>
+  <div id="a20">
+    <p id="a21">
+        post Templete 8
+    </p>
+</div>
+  <div id="a20">
+    <p id="a21">
+        image Gallary 
+    </p>
+</div>
+  <div id="a20">
+    <p id="a21">
+        Audio post
+    </p>
+</div>
+    </div>
+</div>
+<div id="a13">
+    <p id="a14">Page Templete</p>
+<i id="a15" class="fa-solid fa-caret-right"></i>
+
+<div id="a19">
+    <div id="a20">
+    <p id="a21">
+    Authers List
+    </p>
+
+    </div>
+    <div id="a20">
+    <p id="a21">
+        Full-width Page
+    </p>
+
+    </div>
+    <div id="a20">
+    <p id="a21">
+        Lestest News
+    </p>
+
+    </div>
+
+</div>
+
+</div>
+<div id="a13">
+    <p id="a16">Logo  Locations</p>
+
+</div>
+<div id="a13">
+    <p id="a16">Logo  Locations</p>
+
+</div>
+<div id="a13">
+    <p id="a16">Typorgharphy</p>
+
+</div>
+</div>
+</li>
+<li id="a10" >BUY THEME</li>
+<li id="a10" >SPORTS
+<div id="a23">
+<div id="a24">
+
+    <div id="a25">
+
+        <div id="a27"></div>
+        <img id="a26" src="./pics/10006.jpg" alt="">
+    </div>
+
+
+    <p id="a28">Only three players have a winning record against Rafael Nadal</pi>
+
+</div>
+
+
+
+
+<div id="a24">
+    <div id="a25">
+
+        <div id="a27"></div>
+        <img id="a26" src="./pics/10007.jpg" alt="">
+    </div>
+
+
+    <p id="a28">Only three players have a winning record against Rafael Nadal</pi>
+    
+</div>
+<div id="a24">
+    <div id="a25">
+
+        <div id="a27"></div>
+        <img id="a26" src="./pics/10008.jpg" alt="">
+    </div>
+
+
+    <p id="a28">Only three players have a winning record against Rafael Nadal</pi>
+    
+</div>
+<div id="a24">
+    <div id="a25">
+
+        <div id="a27"></div>
+        <img id="a26" src="./pics/10009.jpg" alt="">
+    </div>
+
+
+    <p id="a28">Only three players have a winning record against Rafael Nadal</pi>
+    
+</div>
+<div id="a24">
+    <div id="a25">
+
+        <div id="a27"></div>
+        <img id="a26" src="./pics/10011.jpg" alt="">
+    </div>
+
+
+    <p id="a28">Only three players have a winning record against Rafael Nadal</pi>
+    
+</div>
+</div>
+</li>
+<li id="a10" >VIDEO</li>
+<li id="a10" >SHOP</li>
+<li id="a10" >MORE
+    <i id="a11" class="fa-solid fa-sort-down"></i>
+
+<div id="more1">
+
+
+<div id="a29">
+<p id="a30">Bussiness</p>
+</div>
+<div id="a29">
+<p id="a30">Entertainment</p>
+</div>
+<div id="a29">
+<p id="a30">Fashion</p>
+</div>
+<div id="a31">
+<p id="a30">Tech</p>
+</div>
+
+
+</div>
+
+</li>
+</ul>
+
+</div>
+</div>
+
+<div id="end1">
+    <i id="a7" class="fa-solid fa-magnifying-glass"></i>
+    <i id="a8" class="fa-brands fa-facebook-f"></i>
+    <i  id="a8" class="fa-brands fa-twitter"></i>
+
+</div>
+
+</div>
+
+
+
+<div id="a32">
+
+<div id="a33"><p id="a35">FEATURES</p></div>
+<div id="a36"><p id="a37">LESTEST</p></div>
+<div id="a38"><p id="a39">POPULAR</p></div>
+
+</div>
+<div id="nd1">
+    <div id="a40">
+        <div id="a41"> <p id="a42">RESPONSIVE LEADERBOARD AD AREA</p></div>
+        <div id="a43">
+            <div id="a44"> 
+                    <div id="a46"></div>
+
+                        <div id="a47">
+                            <div id="a48"><i id="a49" class="fa-regular fa-eye"></i>
+<p id="a50">44.3K</p>
+                            </div>
+                            <div id="a51"><i id="a49" class="fa-solid fa-comment"></i>
+<p id="a50">29</p>
+                            </div>
+                        </div>
+
+                        <div id="a52">
+                            <button id="a53">BUSSINESS</button>
+                
+
+                    <p id="a54" >Flex Mag: Powerfully
+                        simple WordPress
+                        theme
+                 </p>
+                        </div>
+
+            </div>
+
+            <div id="a55">
+                <div id="a46"></div>
+
+                <div id="a47">
+                    <div id="a48"><i id="a49" class="fa-regular fa-eye"></i>
+<p id="a50">99.7K</p>
+                    </div>
+                    <div id="a51"><i id="a49" class="fa-solid fa-comment"></i>
+<p id="a50">19</p>
+                    </div>
+                </div>
+
+                <div id="a52">
+                    <button id="a53">SPORTS</button>
+        
+
+            <p id="a54" >Only three players have a winning record  </p>
+                </div>
+
+            </div>
+
+
+
+            <div id="a56">
+                <div id="a46"></div>
+
+                <div id="a47">
+                    <div id="a48"><i id="a49" class="fa-regular fa-eye"></i>
+<p id="a50">99.7K</p>
+                    </div>
+                    <div id="a51"><i id="a49" class="fa-solid fa-comment"></i>
+<p id="a50">19</p>
+                    </div>
+                </div>
+
+                <div id="a52">
+                    <button id="a53">SPORTS</button>
+        
+
+            <p id="a54" >Terrell Owens says he doesn’t care about   </p>
+                </div>
+
+            </div>
+            <div id="a57">
+                <div id="a46"></div>
+
+                <div id="a47">
+                    <div id="a48"><i id="a49" class="fa-regular fa-eye"></i>
+<p id="a50">99.7K</p>
+                    </div>
+                    <div id="a51"><i id="a49" class="fa-solid fa-comment"></i>
+<p id="a50">19</p>
+                    </div>
+                </div>
+
+                <div id="a52">
+                    <button id="a53">BUSSINESS</button>
+        
+
+            <p id="a54" >Google’s Alphabet rollout could  </p>
+                </div>
+            </div>
+        
+        </div>
+
+        
+        <div id="a58">
+        <div id="a59">
+            <p id="a62">LATEST NEWS</p>
+
+            <div id="a63">
+                <div id="a64">
+                    <img id="a65" src="./pics/10077.jpg" alt="">
+                    <div id="a66"></div>
+                </div>
+
+                    <div id="a67">
+                        <p id="a68">BUSSINESS </p>
+                        <p id="a69">Tesla is installing rapid charging stations in Manhattan garages </p>
+                </div>
+            </div>
+
+
+            <div id="a70">
+                <div id="a64">
+                    <img id="a71" src="./pics/10067.jpg" alt="">
+                    <div id="a66"></div>
+                </div>
+
+                    <div id="a67">
+                        <p id="a68">FASHION</p>
+                        <p id="a69">15 Date Night Outfits Inspired by Celebs </p>
+                </div>
+            </div>
+            <div id="a70">
+                <div id="a64">
+                    <img id="a71" src="./pics/10079.jpg" alt="">
+                    <div id="a66"></div>
+                </div>
+
+                    <div id="a67">
+                        <p id="a68">TECH</p>
+                        <p id="a69">Sound-isolating headphones let you really hear your own voice </p>
+                </div>
+            </div>
+            <div id="a70">
+                <div id="a64">
+                    <img id="a71" src="./pics/10075.jpg" alt="">
+                    <div id="a66"></div>
+                </div>
+
+                    <div id="a67">
+                        <p id="a68">TECH</p>
+                        <p id="a69">The selfie stick has taken over CES 2015 </p>
+                </div>
+            </div>
+
+            <div id="a70">
+                <div id="a64">
+                    <img id="a71" src="./pics/10076.jpg" alt="">
+                    <div id="a66"></div>
+                </div>
+
+                    <div id="a67">
+                        <p id="a68">BUSSINESS</p>
+                        <p id="a69">How to gracefully handle multiple job offers and come out on top </p>
+                </div>
+            </div>
+            <div id="a70">
+                <div id="a64">
+                    <img id="a71" src="./pics/10073.jpg" alt="">
+                    <div id="a66"></div>
+                </div>
+
+                    <div id="a67">
+                        <p id="a68">FASHION</p>
+                        <p id="a69">The most iconic Royal wedding gowns of all time </p>
+                </div>
+            </div>
+            <div id="a70">
+                <div id="a64">
+                    <img id="a71" src="./pics/10070.jpg" alt="">
+                    <div id="a66"></div>
+                </div>
+
+                    <div id="a67">
+                        <p id="a68">SPORTS</p>
+                        <p id="a69">The most iconic Royal wedding gowns of all time </p>
+                </div>
+            </div>
+            <div id="a70">
+                <div id="a64">
+                    <img id="a71" src="./pics/10069.jpg" alt="">
+                    <div id="a66"></div>
+                </div>
+
+                    <div id="a67">
+                        <p id="a68">FASHION</p>
+                        <p id="a69">The most iconic Royal wedding gowns of all time </p>
+                </div>
+            </div>
+
+
+            <div id="a70">
+                <div id="a64">
+                    <img id="a71" src="./pics/10061.jpg" alt="">
+                    <div id="a66"></div>
+                </div>
+
+                    <div id="a67">
+                        <p id="a68">BUSSINESS</p>
+                        <p id="a69">Starbucks just made a major change to its Pumpkin Spice Latte </p>
+                </div>
+            </div>
+            
+            <div id="a70">
+                <div id="a64">
+                    <img id="a71" src="./pics/10058.jpg" alt="">
+                    <div id="a66"></div>
+                </div>
+
+                    <div id="a67">
+                        <p id="a68">BUSSINESS</p>
+                        <p id="a69">5 ways to impress your boss (and everyone else) in an important meeting </p>
+                </div>
+            </div>
+            <div id="a70">
+                <div id="a64">
+                    <img id="a71" src="./pics/10059.jpg" alt="">
+                    <div id="a66"></div>
+                </div>
+
+                    <div id="a67">
+                        <p id="a68">TECH</p>
+                        <p id="a69">Samsung flags Australian pricing and dates for its new Galaxy phones</p>
+                </div>
+            </div>
+            <div id="a70">
+                <div id="a64">
+                    <img id="a71" src="./pics/10062.jpg" alt="">
+                    <div id="a66"></div>
+                </div>
+
+                    <div id="a67">
+                        <p id="a68">TECH</p>
+                        <p id="a69">Samsung flags Australian pricing and dates for its new Galaxy phones</p>
+                </div>
+            </div>
+            <div id="a70">
+                <div id="a64">
+                    <img id="a71" src="./pics/10069.jpg" alt="">
+                    <div id="a66"></div>
+                </div>
+
+                    <div id="a67">
+                        <p id="a68">FASHION</p>
+                        <p id="a69">Samsung flags Australian pricing and dates for its new Galaxy phones</p>
+                </div>
+            </div>
+            <div id="a70">
+                <div id="a64">
+                    <img id="a71" src="./pics/10063.jpg" alt="">
+                    <div id="a66"></div>
+                </div>
+
+                    <div id="a67">
+                        <p id="a68">FASHION</p>
+                        <p id="a69">Samsung flags Australian pricing and dates for its new Galaxy phones</p>
+                </div>
+            </div>
+            <div id="a70">
+                <div id="a64">
+                    <img id="a71" src="./pics/10065.jpg" alt="">
+                    <div id="a66"></div>
+                </div>
+
+                    <div id="a67">
+                        <p id="a68">ENTERTAINMENT</p>
+                        <p id="a69">Samsung flags Australian pricing and dates for its new Galaxy phones</p>
+                </div>
+            </div>
+            <div id="a70">
+                <div id="a64">
+                    <img id="a71" src="./pics/10066.jpg" alt="">
+                    <div id="a66"></div>
+                </div>
+
+                    <div id="a67">
+                        <p id="a68">BUSSINESS</p>
+                        <p id="a69">Samsung flags Australian pricing and dates for its new Galaxy phones</p>
+                </div>
+            </div>
+            <div id="a70">
+                <div id="a64">
+                    <img id="a71" src="./pics/10080.jpg" alt="">
+                    <div id="a66"></div>
+                </div>
+
+                    <div id="a67">
+                        <p id="a68">TECH</p>
+                        <p id="a69">Samsung flags Australian pricing and dates for its new Galaxy phones</p>
+                </div>
+            </div>
+            <div id="a70">
+                <div id="a64">
+                    <img id="a71" src="./pics/10064.jpg" alt="">
+                    <div id="a66"></div>
+                </div>
+
+                    <div id="a67">
+                        <p id="a68">FASHION</p>
+                        <p id="a69">Samsung flags Australian pricing and dates for its new Galaxy phones</p>
+                </div>
+            </div>
+
+            <div id="a70">
+                <div id="a64">
+                    <img id="a71" src="./pics/10081.jpg" alt="">
+                    <div id="a66"></div>
+                </div>
+
+                    <div id="a67">
+                        <p id="a68"> BUSSINESS</p>
+                        <p id="a69">Samsung flags Australian pricing and dates for its new Galaxy phones</p>
+                </div>
+            </div>
+            <div id="a70">
+                <div id="a64">
+                    <img id="a71" src="./pics/10082.jpg" alt="">
+                    <div id="a66"></div>
+                </div>
+
+                    <div id="a67">
+                        <p id="a68"> BUSSINESS</p>
+                        <p id="a69">Samsung flags Australian pricing and dates for its new Galaxy phones</p>
+                </div>
+            </div>
+            <div id="a70">
+                <div id="a64">
+                    <img id="a71" src="./pics/10083.jpg" alt="">
+                    <div id="a66"></div>
+                </div>
+
+                    <div id="a67">
+                        <p id="a68"> BUSSINESS</p>
+                        <p id="a69">Samsung flags Australian pricing and dates for its new Galaxy phones</p>
+                </div>
+            </div>
+
+            <button id="a73">MORE LESTEST NEWS</button>
+
+        </div>
+
+
+
+
+
+
+        <div id="a60">
+<p id="a74">FEATURED NEWS</p>
+
+<div id="a75">
+<div id="a76">
+    <div id="a77">
+            <div id="a78"> 
+                <div id="a79">
+                    <img id="a80" src="./pics/10019.jpg" alt="">
+                    <div id="shedo1"></div>
+                </div>
+            <div id="textdiv1">
+
+                <p id="a81">FASHION</p>
+                <p id="a82">Yes, there are now jeans that can charge your phone</p>
+            </div>
+            </div>
+            <div id="a78"> 
+                <div id="a79">
+                    <img id="a80" src="./pics/10021.jpg" alt="">
+                    <div id="shedo1"></div>
+                </div>
+                <div id="textdiv1">
+
+                    <p id="a81">ENTERT</p>
+                    <p id="a82">5 ’Straight Outta Compton’ cameos </p>
+                </div>
+            </div>
+            <div id="a78"> 
+                <div id="a79">
+                    <img id="a80" src="./pics/10018.jpg" alt="">
+                    <div id="shedo1"></div>
+                </div>
+            <div id="textdiv1">
+
+                <p id="a81">LESTEST NEWS</p>
+                <p id="a82">Yes, there are now jeans that can charge your phone</p>
+            </div>
+            </div>
+
+    </div>
+<p id="a83" >ENTERTAINMENT</p>
+
+<div  id="a84">
+
+    <div id="a85">
+    <img id="a86" src="./pics/band-450x270.jpg" alt="">
+    <i id="a87" class="fa-regular fa-circle-play"></i>
+
+<div id="a88"></div>
+
+    </div> 
+
+
+
+        <div id="a2nd1">
+            <p id="a89">ENTERTAINMENT</p>
+            <p id="a90">VMAs add fan-voted Song of the Summer contest with 12 nominees</p>
+            
+                <p id="a91">
+                    Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil...
+                </p>
+
+        </div> 
+</div>
+<div  id="a84">
+
+    <div id="a85">
+    <img id="a86" src="./pics/10071.jpg" alt="">
+    
+
+<div id="a88"></div>
+
+    </div> 
+
+
+
+        <div id="a2nd1">
+            <p id="a89">ENTERTAINMENT</p>
+            <p id="a90">VMAs add fan-voted Song of the Summer contest with 12 nominees</p>
+            
+                <p id="a91">
+                    Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil...
+                </p>
+
+        </div> 
+</div>
+
+
+<div  id="a92">
+
+    <div id="a93">
+    <img id="a86" src="./pics/10025.jpg" alt="">
+    
+
+<div id="a88"></div>
+
+    </div> 
+
+
+
+        <div id="a2nd2">
+            <p id="a89">FASHION</p>
+            <p id="a90">8 Fall outfit ideas brought to you by celebs</p>
+            
+                <p id="a91">
+                    Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil...
+                </p>
+
+        </div> 
+</div>
+
+
+<!--  -->
+<p id="a83" >WHAT’S HOT</p>
+
+<div  id="a84">
+
+    <div id="a85">
+    <img id="a86" src="./pics/10057.jpg" alt="">
+    <!-- <i id="a87" class="fa-regular fa-circle-play"></i> -->
+
+<div id="a88"></div>
+
+    </div> 
+
+
+
+        <div id="a2nd1">
+            <p id="a89">FASHION </p>
+            <p id="a90">VMAs add fan-voted Song of the Summer contest with 12 nominees</p>
+            
+                <p id="a91">
+                    Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil...
+                </p>
+
+        </div> 
+</div>
+<div  id="a84">
+
+    <div id="a85">
+    <img id="a86" src="./pics/10060.jpg" alt="">
+    <!-- <i id="a87" class="fa-regular fa-circle-play"></i> -->
+
+<div id="a88"></div>
+
+    </div> 
+
+
+
+        <div id="a2nd1">
+            <p id="a89">SPORTS</p>
+            <p id="a90">VMAs add fan-voted Song of the Summer contest with 12 nominees</p>
+            
+                <p id="a91">
+                    Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil...
+                </p>
+
+        </div> 
+
+
+
+
+</div>
+<p id="a94" >FEATURED GALLERY</p>
+
+
+<div id="a95">
+    <div id="b5">
+    
+<div id="a96">
+
+
+    
+        
+
+<div id="a97">
+<img id="a98" src="./pics/10019.jpg" alt="">
+</div>
+<div id="a97">
+    <img id="a98" src="./pics/10026.jpg" alt="">
+</div>
+<div id="a97">
+    <img id="a98" src="./pics/10027.jpg" alt="">
+</div>
+<div id="a97">
+    <img id="a98" src="./pics/10014.jpg" alt="">
+</div>
+<div id="a97">
+    <img id="a98" src="./pics/10015.jpg" alt="">
+</div>
+ <div id="a97">
+    <img id="a98" src="./pics/10028.jpg" alt="">
+ </div>
+ <div id="a97">
+    <img id="a98" src="./pics/10019.jpg" alt="">
+ </div>
+ <div id="a97">
+    <img id="a98" src="./pics/10027.jpg" alt="">
+ </div>
+
+
+ 
+</div>
+<div id="a99">
+   <p id="b1">58 Photos that prove Rihanna can wear literally anything</p>
+</div>
+ 
+
+</div>
+
+
+<div id="b2">
+
+<div id="b3">
+<img id="b4" src="./pics/10020.jpg" alt="">
+</div>
+<div id="b3"><img id="b4" src="./pics/10037.jpg" alt=""></div>
+<div id="b3"><img id="b4" src="./pics/10045.jpg" alt=""></div>
+<div id="b3">
+    <img id="b4" src="./pics/10062.jpg" alt="">
+</div>
+<div id="b3"><img id="b4" src="./pics/10063.jpg" alt=""></div>
+<div id="b3"><img id="b4" src="./pics/10064.jpg" alt=""></div>
+</div>
+
+</div>
+
+
+<div id="b7"></div>
+
+<div  id="a84">
+
+    <div id="a85">
+    <img id="a86" src="./pics/10072.jpg" alt="">
+    
+
+<div id="a88"></div>
+
+    </div> 
+
+
+
+        <div id="a2nd1">
+            <p id="a89">BUSSINESS</p>
+            <p id="a90">VMAs add fan-voted Song of the Summer contest with 12 nominees</p>
+            
+                <p id="a91">
+                    Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil...
+                </p>
+
+        </div> 
+</div>
+<div  id="a84">
+
+    <div id="a85">
+    <img id="a86" src="./pics/10067.jpg" alt="">
+    
+
+<div id="a88"></div>
+
+    </div> 
+
+
+
+        <div id="a2nd1">
+            <p id="a89">FASHION</p>
+            <p id="a90">VMAs add fan-voted Song of the Summer contest with 12 nominees</p>
+            
+                <p id="a91">
+                    Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil...
+                </p>
+
+        </div> 
+</div>
+<div  id="a84">
+
+    <div id="a85">
+    <img id="a86" src="./pics/10012.jpg" alt="">
+    
+
+<div id="a88"></div>
+
+    </div> 
+
+
+
+        <div id="a2nd1">
+            <p id="a89">FASHION</p>
+            <p id="a90">VMAs add fan-voted Song of the Summer contest with 12 nominees</p>
+            
+                <p id="a91">
+                    Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil...
+                </p>
+
+        </div> 
+</div>
+<div  id="a84">
+
+    <div id="a85">
+    <img id="a86" src="./pics/10013.jpg" alt="">
+    
+
+<div id="a88"></div>
+
+    </div> 
+
+
+
+        <div id="a2nd1">
+            <p id="a89">FASHION</p>
+            <p id="a90">VMAs add fan-voted Song of the Summer contest with 12 nominees</p>
+            
+                <p id="a91">
+                    Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil...
+                </p>
+
+        </div> 
+</div>
+<div  id="a84">
+
+    <div id="a85">
+    <img id="a86" src="./pics/10084.jpg" alt="">
+    
+
+<div id="a88"></div>
+
+    </div> 
+
+
+
+        <div id="a2nd1">
+            <p id="a89">FASHION</p>
+            <p id="a90">VMAs add fan-voted Song of the Summer contest with 12 nominees</p>
+            
+                <p id="a91">
+                    Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil...
+                </p>
+
+        </div> 
+</div>
+<div  id="a84">
+
+    <div id="a85">
+    <img id="a86" src="./pics/10085.jpg" alt="">
+    <i id="a87" class="fa-regular fa-circle-play"></i>
+    
+
+<div id="a88"></div>
+
+    </div> 
+
+
+
+        <div id="a2nd1">
+            <p id="a89">FASHION</p>
+            <p id="a90">VMAs add fan-voted Song of the Summer contest with 12 nominees</p>
+            
+                <p id="a91">
+                    Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil...
+                </p>
+
+        </div> 
+</div>
+<div  id="a84">
+
+    <div id="a85">
+    <img id="a86" src="./pics/10008.jpg" alt="">
+    
+    
+
+<div id="a88"></div>
+
+    </div> 
+
+
+
+        <div id="a2nd1">
+            <p id="a89">FASHION</p>
+            <p id="a90">VMAs add fan-voted Song of the Summer contest with 12 nominees</p>
+            
+                <p id="a91">
+                    Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil...
+                </p>
+
+        </div> 
+</div>
+<div  id="a84">
+
+    <div id="a85">
+    <img id="a86" src="./pics/10086.jpg" alt="">
+    
+    
+
+<div id="a88"></div>
+
+    </div> 
+
+
+
+        <div id="a2nd1">
+            <p id="a89">FASHION</p>
+            <p id="a90">VMAs add fan-voted Song of the Summer contest with 12 nominees</p>
+            
+                <p id="a91">
+                    Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil...
+                </p>
+
+        </div> 
+</div>
+<div  id="a84">
+
+    <div id="a85">
+    <img id="a86" src="./pics/10026.jpg" alt="">
+    
+    
+
+<div id="a88"></div>
+
+    </div> 
+
+
+
+        <div id="a2nd1">
+            <p id="a89">FASHION</p>
+            <p id="a90">VMAs add fan-voted Song of the Summer contest with 12 nominees</p>
+            
+                <p id="a91">
+                    Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil...
+                </p>
+
+        </div> 
+</div>
+<div  id="a84">
+
+    <div id="a85">
+    <img id="a86" src="./pics/10027.jpg" alt="">
+    
+    
+
+<div id="a88"></div>
+
+    </div> 
+
+
+
+        <div id="a2nd1">
+            <p id="a89">FASHION</p>
+            <p id="a90">VMAs add fan-voted Song of the Summer contest with 12 nominees</p>
+            
+                <p id="a91">
+                    Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil...
+                </p>
+
+        </div> 
+</div>
+<div  id="a84">
+
+    <div id="a85">
+    <img id="a86" src="./pics/10014.jpg" alt="">
+    
+    
+
+<div id="a88"></div>
+
+    </div> 
+
+
+
+        <div id="a2nd1">
+            <p id="a89">FASHION</p>
+            <p id="a90">VMAs add fan-voted Song of the Summer contest with 12 nominees</p>
+            
+                <p id="a91">
+                    Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil...
+                </p>
+
+        </div> 
+</div>
+<div  id="b9">
+
+    <div id="a85">
+    <img id="a86" src="./pics/10015.jpg" alt="">
+    
+    
+
+<div id="a88"></div>
+
+    </div> 
+
+
+
+        <div id="a2nd1">
+            <p id="a89">FASHION</p>
+            <p id="a90">VMAs add fan-voted Song of the Summer contest with 12 nominees</p>
+            
+                <p id="a91">
+                    Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil...
+                </p>
+
+        </div> 
+
+
+
+        
+    </div>
+    <button id="b8">MORE POSTS</button>
+
+    <div id="b10"></div>
+    
+</div>
+
+</div>
+
+</div>
+
+
+<div id="a61">
+<div id="a74">MOST POPULAR</div>
+
+<div id="b11">
+
+    <div id="b12">
+    <img id="b13" src="./pics/10057.jpg" alt="">
+    <div id="b14"></div>
+    </div>
+
+    <div id="b15">
+<p id="b16">FASHION</p>
+
+
+<p id="b17">Kylie Jenner was paid six figures to attend her own 18th birthday party</p>
+    </div>
+</div>
+
+
+
+<div id="b18">
+<img id="b19" src="./pics/10055.jpg" alt="">
+</div>
+
+
+<div id="b11">
+
+    <div id="b12">
+    <img id="b13" src="./pics/10072.jpg" alt="">
+    <div id="b14"></div>
+    </div>
+
+    <div id="b15">
+<p id="b16">BUSSINESS</p>
+
+
+<p id="b17">Kylie Jenner was paid six figures to attend her own 18th birthday party</p>
+    </div>
+</div>
+<div id="b11">
+
+    <div id="b12">
+    <img id="b13" src="./pics/10014.jpg" alt="">
+    <div id="b14"></div>
+    </div>
+
+    <div id="b15">
+<p id="b16">TECH</p>
+
+
+<p id="b17">Kylie Jenner was paid six figures to attend her own 18th birthday party</p>
+    </div>
+</div>
+<div id="b11">
+
+    <div id="b12">
+    <img id="b13" src="./pics/10067.jpg" alt="">
+    <div id="b14"></div>
+    </div>
+
+    <div id="b15">
+<p id="b16">FASHION</p>
+
+
+<p id="b17">Kylie Jenner was paid six figures to attend her own 18th birthday party</p>
+    </div>
+</div>
+<div id="b11">
+
+    <div id="b12">
+    <img id="b13" src="./pics/10012.jpg" alt="">
+    <div id="b14"></div>
+    </div>
+
+    <div id="b15">
+<p id="b16">TECH</p>
+
+
+<p id="b17">Kylie Jenner was paid six figures to attend her own 18th birthday party</p>
+    </div>
+</div>
+<div id="b11">
+
+    <div id="b12">
+    <img id="b13" src="./pics/10060.jpg" alt="">
+    <div id="b14"></div>
+    </div>
+
+    <div id="b15">
+<p id="b16">SPORTS</p>
+
+
+<p id="b17">Kylie Jenner was paid six figures to attend her own 18th birthday party</p>
+    </div>
+</div>
+<div id="b11">
+
+    <div id="b12">
+    <img id="b13" src="./pics/10068.jpg" alt="">
+    <div id="b14"></div>
+    </div>
+
+    <div id="b15">
+<p id="b16">ENTERTAINMENT</p>
+
+
+<p id="b17">Kylie Jenner was paid six figures to attend her own 18th birthday party</p>
+    </div>
+</div>
+<div id="b11">
+
+    <div id="b12">
+    <img id="b13" src="./pics/10013.jpg" alt="">
+    <div id="b14"></div>
+    </div>
+
+    <div id="b15">
+<p id="b16">TECH</p>
+
+
+<p id="b17">Kylie Jenner was paid six figures to attend her own 18th birthday party</p>
+    </div>
+</div>
+
+</div>
+
+
+
+</div>
+
+
+<div id="b21">
+   <p id="b22"> RESPONSIVE LEADERBOARD AD AREA</p>
+</div>
+        </div>
+    
+    
+    </div>
+
+    <div id="b23">
+<div id="b25">
+<div id="b26">
+<img id="b27" src="./pics/10056.png" alt="">
+</div>
+
+
+
+<div id="b29">
+
+    <p id="b28">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem?</p>
+</div>
+<div id="b29">
+
+    <p id="b28">The theme is part of the best blog/magazine <span id="b30">WordPress Themes</span> on PremiumCoding.</p>
+</div>
+
+<div id="b31">
+    <i id="b32" class="fa-brands fa-square-facebook"></i>
+    <i id="b33" class="fa-brands fa-square-twitter"></i>
+    <i id="b33"  class="fa-brands fa-square-pinterest"></i>
+    <i id="b33" class="fa-brands fa-square-instagram"></i>
+    <i id="b33" class="fa-brands fa-youtube"></i>
+    <i id="b33" class="fa-brands fa-linkedin"></i>
+    <i id="b33" class="fa-solid fa-t"></i>
+
+</div>
+
+</div>
+
+
+
+
+<div id="b25">
+<p id="b34">LATEST NEWS</p>
+
+<div id="b35">
+<p id="b36">Flex Mag: Powerfully simple WordPress theme</p>
+</div>
+<div id="b35">
+<p id="b36">Only three players have a winning record against Rafael Nadal</p>
+</div>
+<div id="b35">
+<p id="b36">Terrell Owens says he doesn’t care about the Hall of Fame</p>
+</div>
+<div id="b37">
+<p id="b36">15 Date Night Outfits Inspired by Celebs</p>
+</div>
+</div>
+
+
+
+<div id="b25">
+    <p id="b34">POPULAR TAGS</p>
+
+    <div id="b38">
+<button id="b39">GALLERY</button>
+<button id="b39">SPORTS</button>
+<button id="b39">FEATURED</button>
+<button id="b39">BUSSINESS</button>
+<button id="b39">GALLERY</button>
+<button id="b39">SPORTS</button>
+<button id="b39">FEATURED</button>
+<button id="b39">BUSSINESS</button>
+<button id="b39">NFL</button>
+<button id="b39">SPORTS</button>
+<button id="b39">FEATURED</button>
+<button id="b39">GALLERY</button>
+<button id="b39">SPORTS</button>
+<button id="b39">FEATURED</button>
+<button id="b39">FEATURED</button>
+<button id="b39">BUSSINESS</button>
+<button id="b39">NFL</button>
+<button id="b39">SPORTS</button>
+    </div>
+</div>
+    </div>
+
+
+
+
+    <div id="b24">
+
+<div id="c1">
+<div id="c2">
+<p id="c3">Copyright © 2017 Flex Mag Theme. Theme by MVP Themes, powered by Wordpress.</p>
+</div>
+<div id="c4">
+<p id="c5">HOME</p>
+<p id="c6" >THEME</p>
+<p id="c6" >SHOP</p>
+<p id="c6" >ABOUT</p>
+</div>
+
+</div>
+
+    </div>
+
+    
+</div>
+
+
+
+
+</body>
+</html>
